@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-
 using FirebirdSql.Data.FirebirdClient;
 using Ewidencja.DTOs;
 

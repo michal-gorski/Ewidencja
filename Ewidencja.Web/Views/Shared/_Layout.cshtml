@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900|Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+    
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")    
     
@@ -13,12 +14,13 @@
             <div id="header">
                 <img src="~/Images/logo.png" id="logo"/>
                 <div id="title">Ewidencja Pacjentów</div>
-                <div id="logout">@Html.ActionLink("WYLOGUJ","Logout", "Home")</div>
+                <div id="logout" class="fontRegular">@Html.ActionLink("WYLOGUJ","Logoff", "Account")</div>
             </div>
            @RenderBody()
      </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/panelScript")
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -18,7 +18,10 @@ namespace Ewidencja
             //           "~/Scripts/jquery.unobtrusive*",
             //            "~/Scripts/jquery.validate*"));
 
+            
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
+            
+
             bundles.Add(new ScriptBundle("~/bundles/ewidencjaScript").Include("~/Scripts/panel.js"));
 
 
@@ -27,14 +30,14 @@ namespace Ewidencja
                 "~/Content/normalize.css",
                 "~/Content/common.css", 
                 "~/Content/bootstrap.css",
-                "~/Content/forms.css",
+                
                 //"~/Content/simpliq.css",
                 //"~/Content/simpliq-responsive.css",
 
-                "~/Content/panel.css",
-                "~/Content/patientsList.css", 
-                "~/Content/classes.css",
                 "~/Content/font-awesome.css"));
+
+            bundles.Add(new Bundle("~/Content/less").IncludeDirectory("~/Content", "*.less", false));
+
 
             /*bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

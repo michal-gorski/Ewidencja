@@ -11,16 +11,17 @@
 </head>
 <body>
     <div id="container">
-            <div id="header">
-                <img src="~/Images/logo.png" id="logo"/>
-                <div id="title">Ewidencja Pacjentów</div>
-                <div id="logout" class="fontRegular">@Html.ActionLink("WYLOGUJ","Logoff", "Account")</div>
-            </div>
-           @RenderBody()
-     </div>
+        <div id="header">
+            <img src="~/Images/logo.png" id="logo"/>
+            <div id="title">Ewidencja Pacjentów</div>
+            <div id="logout" class="fontRegular">@Html.ActionLink("WYLOGUJ","Logoff", "Account")</div>
+        </div>
+        @RenderBody()
+    </div>
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/panelScript")
+    @Scripts.Render("~/bundles/ewidencjaScript")
     @RenderSection("scripts", required: false)
 </body>
 </html>

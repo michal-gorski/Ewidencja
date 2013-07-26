@@ -11,27 +11,32 @@ namespace Ewidencja
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
-                        "~/Scripts/jquery-ui-{version}.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+            //           "~/Scripts/jquery-ui-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.unobtrusive*",
-                        "~/Scripts/jquery.validate*"));
+            //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            //           "~/Scripts/jquery.unobtrusive*",
+            //            "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
-            bundles.Add(new ScriptBundle("~/bundles/panelScript").Include("~/Scripts/panel.js"));
+            bundles.Add(new ScriptBundle("~/bundles/ewidencjaScript").Include("~/Scripts/panel.js"));
 
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/normalize.css",
                 "~/Content/common.css", 
                 "~/Content/bootstrap.css",
                 "~/Content/forms.css",
+                //"~/Content/simpliq.css",
+                //"~/Content/simpliq-responsive.css",
+
                 "~/Content/panel.css",
                 "~/Content/patientsList.css", 
-                "~/Content/classes.css"));
+                "~/Content/classes.css",
+                "~/Content/font-awesome.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+            /*bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
                         "~/Content/themes/base/jquery.ui.resizable.css",
                         "~/Content/themes/base/jquery.ui.selectable.css",
@@ -44,6 +49,7 @@ namespace Ewidencja
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+             */ 
         }
     }
 }

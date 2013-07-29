@@ -1,18 +1,27 @@
-﻿
-/*
-.panel {
-    padding: 0;
-    margin: 0;
-    border-left: 6px solid #50A3DA;
-    background-color: #ECEBEC;
-    height: calc(100% - 10px);
-    margin-top: 16px;
+﻿@import "./variables.less";
+@import "./mixins.less";
+
+
+div.panel {
+    padding: 0; 
+    border:none;   
+    border-left: 6px solid @accent-color;
+    background-color: @panel-background-color;
+   
+    margin-top: 12px;
+    
+    
+    .border-radius-mixin(0); 
+    .box-shadow-mixin;
+    
+    overflow: hidden;    
 }
 
 .panelHeader {
-    background-color: #cccccc;
+    background-color: @panel-header-color;
     height: 32px;
     width: 100%;
+    margin:0;
     
 }
 
@@ -23,15 +32,13 @@
         font-size: 18px;
  }
 
-.leftPanel {
-    float: left;
-    width: 560px;
-    margin-left: 16px;
-}
+
 
 .panelContent {
     padding-left: 8px;
     margin-top:8px;
+    height:400px;
 }
 
-    */
+
+   

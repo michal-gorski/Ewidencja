@@ -6,22 +6,29 @@
     <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900|Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
     
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")    
-    @Styles.Render("~/Content/less")  
+    @Styles.Render("~/bundles/bootstrapCSS")    
+    @Styles.Render("~/bundles/fontAwesome")  
+    @Styles.Render("~/bundles/styles")  
     
 </head>
 <body>
     <div id="container">
         <div id="header">
-            <img src="~/Images/logo.png" id="logo"/>
-            <div id="title">Ewidencja Pacjentów</div>
-            <div id="logout" class="fontRegular">@Html.ActionLink("WYLOGUJ","Logoff", "Account")</div>
+            
+            <img id="logo" src="~/Images/logo.png" />
+            <a id="title">Ewidencja Pacjentów</a>
+            @Html.ActionLink("WYLOGUJ","Logoff", "Account",new { id="logout" })
         </div>
-        @RenderBody()
+        <div id="app-content" class="row">
+            
+            @RenderBody()    
+
+        </div>
+        
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/bootstrapJS")
     
     @Scripts.Render("~/bundles/ewidencjaScript")
     @RenderSection("scripts", required: false)

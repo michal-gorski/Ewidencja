@@ -178,12 +178,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-responsive.css" />
-    <Content Include="Content\bootstrap-responsive.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <None Include="Content\classes.less" />
     <None Include="Content\common.less" />
+    <Content Include="Content\bootstrap\bootstrap-glyphicons.css" />
+    <Content Include="Content\bootstrap\bootstrap.css" />
+    <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\common.css">
       <DependentUpon>common.less</DependentUpon>
     </Content>
@@ -191,12 +190,30 @@
       <DependentUpon>common.less</DependentUpon>
     </Content>
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fonts\glyphiconshalflings-regular.svg" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphiconshalflings-regular.woff" />
+    <Content Include="Content\fonts\glyphiconshalflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphiconshalflings-regular.otf" />
+    <Content Include="Content\fonts\glyphiconshalflings-regular.eot" />
     <None Include="Content\forms.less" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\mixins.css">
+      <DependentUpon>mixins.less</DependentUpon>
+    </Content>
+    <Content Include="Content\mixins.min.css">
+      <DependentUpon>mixins.less</DependentUpon>
+    </Content>
     <Content Include="Content\normalize.css" />
+    <Content Include="Content\mixins.less" />
     <None Include="Content\panel.less" />
+    <Content Include="Content\panel.css">
+      <DependentUpon>panel.less</DependentUpon>
+    </Content>
+    <Content Include="Content\panel.min.css">
+      <DependentUpon>panel.less</DependentUpon>
+    </Content>
     <Content Include="Content\simpliq-responsive.css" />
     <Content Include="Content\simpliq.css" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
@@ -271,6 +288,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\oldData\PACJENCI.GDB" />
     <Content Include="Images\logo.png" />
+    <Content Include="Scripts\less-1.4.1.min.js" />
     <Content Include="Scripts\panel.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

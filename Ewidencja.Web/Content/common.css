@@ -8,39 +8,37 @@ html {
   padding: 0;
 }
 div#container {
-  width: 1240px;
-  background-color: #323231;
-  margin-left: auto;
-  margin-right: auto;
+  /*width: 1240px;*/
+
+  background-color: #fafafa;
   height: 100%;
   margin-top: 0;
   padding: 0;
 }
 div#header {
-  height: 44px;
-  width: 1240px;
-  color: #50a3da;
-  background-color: #222222;
-  margin: 0;
+  height: 55px;
+  color: #36a9e1;
+  background-color: #383e4b;
   padding: 0;
   padding-top: 7px;
+  padding-left: 30px;
 }
 img#logo {
-  float: left;
-  margin-left: 16px;
   margin-right: 16px;
+  margin-top: -5px;
 }
 #header #title {
   font-size: 24px;
   font-weight: 100;
-  padding-top: 7px;
-  float: left;
+  display: inline-block;
+  margin-top: 4px;
 }
-#header #logout {
+#header a#logout {
+  display: inline-block;
   float: right;
-  margin-right: 16px;
-  margin-top: 8px;
+  margin-right: 30px;
+  margin-top: 11px;
 }
-#header #logout a:hover {
-  color: white;
+#header a#logout:hover {
+  color: #ffffff;
 }

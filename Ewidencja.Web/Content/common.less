@@ -1,4 +1,5 @@
 ﻿@import "./variables.less";
+@header-height: 55px;
 
 body, html {
     height: 100%;
@@ -18,7 +19,7 @@ div#container {
 }
 
 div#header {
-    height: 55px;   
+    height: @header-height;   
     color: @text-color-accent;
     background-color: @background-color-contrast;
     padding: 0;
@@ -36,8 +37,7 @@ img#logo {
     font-size: 24px;
     font-weight: 100;  
     display:inline-block;
-    margin-top:4px;
-    
+    margin-top:4px;   
    
 }
 
@@ -52,3 +52,11 @@ img#logo {
     color:@text-color-accent-hover;
 }
 
+#app-content
+{
+    margin-left: @margin-unit;
+    margin-right: @margin-unit;
+    margin-top: @margin-unit;
+    height:~"calc(100% - @{header-height} - 2 * @{margin-unit})";
+   
+}

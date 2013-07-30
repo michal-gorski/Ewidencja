@@ -10,7 +10,7 @@ html {
 div#container {
   /*width: 1240px;*/
 
-  background-color: #fafafa;
+  background-color: #f0f0f0;
   height: 100%;
   margin-top: 0;
   padding: 0;
@@ -41,4 +41,10 @@ img#logo {
 }
 #header a#logout:hover {
   color: #ffffff;
+}
+#app-content {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 12px;
+  height: calc(100% - 55px - 2 * 12px);
 }

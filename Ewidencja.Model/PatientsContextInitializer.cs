@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Ewidencja.Model
 {
-    internal class PatientsContextInitializer : DropCreateDatabaseAlways<PatientsContext>
+    internal class PatientsContextInitializer : DropCreateDatabaseIfModelChanges<PatientsContext>
     {
         protected override void Seed(PatientsContext context)
         {

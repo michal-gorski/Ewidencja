@@ -170,10 +170,16 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WebAPI\PatientsController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201307301408434_Users Test.cs" />
+    <Compile Include="Migrations\201307301408434_Users Test.Designer.cs">
+      <DependentUpon>201307301408434_Users Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -183,6 +189,12 @@
     <Content Include="Content\bootstrap\bootstrap-glyphicons.css" />
     <Content Include="Content\bootstrap\bootstrap.css" />
     <Content Include="Content\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\classes.css">
+      <DependentUpon>classes.less</DependentUpon>
+    </Content>
+    <Content Include="Content\classes.min.css">
+      <DependentUpon>classes.less</DependentUpon>
+    </Content>
     <Content Include="Content\common.css">
       <DependentUpon>common.less</DependentUpon>
     </Content>
@@ -290,7 +302,9 @@
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\less-1.4.1.min.js" />
     <Content Include="Scripts\panel.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -351,6 +365,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201307301408434_Users Test.resx">
+      <DependentUpon>201307301408434_Users Test.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

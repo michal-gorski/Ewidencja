@@ -9,7 +9,7 @@ namespace Ewidencja
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                "~/Scripts/jquery-{version}.js"));
+                "~/Scripts/lib/jquery-{version}.js"));
 
             //bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
             //           "~/Scripts/jquery-ui-{version}.js"));
@@ -19,10 +19,10 @@ namespace Ewidencja
             //            "~/Scripts/jquery.validate*"));
 
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrapJS").Include("~/Scripts/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrapJS").Include("~/Scripts/lib/bootstrap.js"));
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include("~/Scripts/lib/angular.js"));
 
-
-            bundles.Add(new ScriptBundle("~/bundles/ewidencjaScript").Include("~/Scripts/panel.js"));
+            bundles.Add(new ScriptBundle("~/bundles/ewidencjaScript").IncludeDirectory("~/Scripts", "*.js", false));
 
 
             bundles.Add(new Bundle("~/bundles/bootstrapCSS").Include(new []{"~/Content/bootstrap/bootstrap.css"}));

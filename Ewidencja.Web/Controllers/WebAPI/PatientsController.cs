@@ -5,19 +5,25 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.UI.WebControls;
+using Ewidencja.DTOs;
+using Ewidencja.Model;
+using Ewidencja.Model.Interfaces;
 
 namespace Ewidencja.Controllers.WebAPI
 {
     [Authorize]
     public class PatientsController : ApiController
     {
+        private IPatientService _patientService = ServiceProvider.GetPatientService(); 
+
         // GET api/<controller>
-        // [Authorize(Roles="Doctor, Assistant")]
-        public IEnumerable<string> Get()
+        [Authorize(Roles="Doctor, Assistant")]
+        public IEnumerable<Patient> GetPatientsList(int skip, int take)
         {
-            return new string[] { "value1", "value2" };
+            return _patientService.GetPartialPatientsBasicInfo(skip, take);
         }
 
+        /*
         // GET api/<controller>/5
         public string Get(int id)
         {
@@ -29,6 +35,7 @@ namespace Ewidencja.Controllers.WebAPI
         {
         }
 
+        
         // PUT api/<controller>/5
         public void Put(int id, [FromBody]string value)
         {
@@ -38,5 +45,6 @@ namespace Ewidencja.Controllers.WebAPI
         public void Delete(int id)
         {
         }
+         */ 
     }
 }

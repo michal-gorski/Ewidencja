@@ -299,8 +299,33 @@
     <Content Include="Global.asax" />
     <Content Include="Content\oldData\PACJENCI.GDB" />
     <Content Include="Images\logo.png" />
-    <Content Include="Scripts\less-1.4.1.min.js" />
+    <Content Include="Scripts\lib\angular-bootstrap-prettify.js" />
+    <Content Include="Scripts\lib\angular-bootstrap-prettify.min.js" />
+    <Content Include="Scripts\lib\angular-bootstrap.js" />
+    <Content Include="Scripts\lib\angular-bootstrap.min.js" />
+    <Content Include="Scripts\lib\angular-cookies.js" />
+    <Content Include="Scripts\lib\angular-cookies.min.js" />
+    <Content Include="Scripts\lib\angular-loader.js" />
+    <Content Include="Scripts\lib\angular-loader.min.js" />
+    <Content Include="Scripts\lib\angular-mocks.js" />
+    <Content Include="Scripts\lib\angular-resource.js" />
+    <Content Include="Scripts\lib\angular-resource.min.js" />
+    <Content Include="Scripts\lib\angular-sanitize.js" />
+    <Content Include="Scripts\lib\angular-sanitize.min.js" />
+    <Content Include="Scripts\lib\angular-scenario.js" />
+    <Content Include="Scripts\lib\angular.js" />
+    <Content Include="Scripts\lib\angular.min.js" />
+    <Content Include="Scripts\lib\bootstrap.js" />
+    <Content Include="Scripts\lib\bootstrap.min.js" />
+    <None Include="Scripts\lib\jquery-2.0.3.intellisense.js" />
+    <Content Include="Scripts\lib\jquery-2.0.3.js" />
+    <Content Include="Scripts\lib\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\lib\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\lib\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\lib\jstd-scenario-adapter-config.js" />
+    <Content Include="Scripts\lib\jstd-scenario-adapter.js" />
     <Content Include="Scripts\panel.js" />
+    <Content Include="Scripts\patientsListController.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -333,12 +358,15 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Content\variables.less" />
+    <Content Include="Views\Partials\_PatientsListPartial.cshtml" />
+    <Content Include="Views\Partials\_PatientQuickDetailsPartial.cshtml" />
+    <Content Include="Views\Home\DoctorDashboard.cshtml" />
+    <Content Include="Scripts\lib\jquery-2.0.3.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

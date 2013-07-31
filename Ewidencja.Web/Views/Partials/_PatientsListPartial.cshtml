@@ -1,0 +1,33 @@
+﻿<div id="patientsList" class="info-panel info-panel-6" ng-controller="PatientsListController">
+        <div class="info-panel-header font-bold-condensed"><h1>Pacjenci</h1></div>
+        <div class="info-panel-content">
+            
+            <form id="patientsSearchForm">
+                <fieldset>
+                    <legend>Wyszukaj pacjentów</legend>
+                    <input type="text" name="patientSearch" id="patientsSearch" ng-model="searchText" />
+                </fieldset>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Adres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="patient in patients">
+                        <td>{{patient.name}}</td>
+                        <td>{{patient.surname}}</td>
+                        <td>{{patient.address}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <button ng-click="AddPatient()" value="dodaj pacjenta">dodaj pacjenta</button>
+                
+        </div>
+
+    </div>

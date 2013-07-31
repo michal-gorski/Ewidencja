@@ -7,8 +7,8 @@ div.info-panel {
     
     float: left;
     border:none;   
-    border-left: @margin-unit / 2 solid @accent-color;
-    background-color: @panel-background-color;
+    border-left: @margin-unit / 2 solid @color-accent;
+    background-color: @color-panel-background;
     
     .border-radius-mixin(0); 
     .box-shadow-mixin;
@@ -35,7 +35,7 @@ div.info-panel:last-child {
 
 
 .info-panel-header {
-    background-color: @panel-header-color;
+    background-color: @color-panel-header;
     height: @margin-unit * 3;
     width: 100%;
     margin:0;

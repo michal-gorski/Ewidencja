@@ -217,7 +217,6 @@
     <Content Include="Content\mixins.min.css">
       <DependentUpon>mixins.less</DependentUpon>
     </Content>
-    <Content Include="Content\normalize.css" />
     <Content Include="Content\mixins.less" />
     <None Include="Content\panel.less" />
     <Content Include="Content\panel.css">

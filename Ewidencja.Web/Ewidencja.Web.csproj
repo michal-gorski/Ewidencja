@@ -299,6 +299,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\oldData\PACJENCI.GDB" />
     <Content Include="Images\logo.png" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\ewidencjaServices.js" />
     <Content Include="Scripts\lib\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\lib\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\lib\angular-bootstrap.js" />
@@ -325,7 +327,8 @@
     <Content Include="Scripts\lib\jstd-scenario-adapter-config.js" />
     <Content Include="Scripts\lib\jstd-scenario-adapter.js" />
     <Content Include="Scripts\panel.js" />
-    <Content Include="Scripts\patientsListController.js" />
+    <Content Include="Scripts\Controllers\patientsListController.js" />
+    <Content Include="Scripts\Services\patientListService.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -22,7 +22,9 @@ namespace Ewidencja
             bundles.Add(new ScriptBundle("~/bundles/bootstrapJS").Include("~/Scripts/lib/bootstrap.js"));
             bundles.Add(new ScriptBundle("~/bundles/angular").Include("~/Scripts/lib/angular.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/ewidencjaScriptServices").IncludeDirectory("~/Scripts/Services", "*.js", false));
             bundles.Add(new ScriptBundle("~/bundles/ewidencjaScript").IncludeDirectory("~/Scripts", "*.js", false));
+            bundles.Add(new ScriptBundle("~/bundles/ewidencjaScriptControllers").IncludeDirectory("~/Scripts/Controllers", "*.js", false));
 
 
             bundles.Add(new Bundle("~/bundles/bootstrapCSS").Include(new []{"~/Content/bootstrap/bootstrap.css"}));

@@ -10,6 +10,17 @@
     @Styles.Render("~/bundles/fontAwesome")  
     @Styles.Render("~/bundles/styles")  
     
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrapJS")
+    @Scripts.Render("~/bundles/angular")
+    
+    @Scripts.Render("~/bundles/ewidencjaScriptControllers")
+    @Scripts.Render("~/bundles/ewidencjaScriptServices")
+    @Scripts.Render("~/bundles/ewidencjaScript")
+    
+    @RenderSection("scripts", required: false)
+    
 </head>
 <body>
     <div id="container">
@@ -19,7 +30,7 @@
             <span id="title">Ewidencja Pacjentów</span>
             @Html.ActionLink("WYLOGUJ","Logoff", "Account", new {@class="font-bold",id="logout" })
         </div>
-        <div id="app-content" ng-app>
+        <div id="app-content" ng-app="ewidencja">
             
             @RenderBody()    
 
@@ -27,12 +38,6 @@
         
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrapJS")
-    @Scripts.Render("~/bundles/angular")
-    
-    @Scripts.Render("~/bundles/ewidencjaScript")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
 

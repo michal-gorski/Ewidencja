@@ -12,6 +12,7 @@
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
                         <th>Imię</th>
                         <th>Nazwisko</th>
                         <th>Adres</th>
@@ -19,7 +20,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="patient in patients">
-                        <td>{{patient.PatientID}}</td>
+                        <td>{{patient.PatientId}}</td>
                         <td>{{patient.Name}}</td>
                         <td>{{patient.Surname}}</td>
                         <td>{{patient.DateOfBirth}}</td>

@@ -14,7 +14,8 @@ namespace Ewidencja.Model.DataServices
 
             return (from p in pc.Patients
                     select new PatientPartial
-                    { 
+                    {
+                        PatientId = p.PatientId,
                         Name = p.Name,
                         Surname = p.Surname,
                         City = p.City,
@@ -33,6 +34,7 @@ namespace Ewidencja.Model.DataServices
                     orderby p.Surname, p.Name
                     select new PatientPartial
                     {
+                        PatientId = p.PatientId,
                         Name = p.Name,
                         Surname = p.Surname,
                         City = p.City,

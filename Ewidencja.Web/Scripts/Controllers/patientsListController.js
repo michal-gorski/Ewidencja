@@ -1,12 +1,11 @@
 ﻿function PatientsListController($scope, PatientsList) {
 
-    $scope.patients = PatientsList.GetPatients();
-
-
-
-
-
+    PatientsList.GetPatients
+        .then(function(data) {
+            $scope.patients = data.data;
+        }, function(request, status, error) {
+            $scope.patients = Array();
+        });          
+        
     
-
-
 }

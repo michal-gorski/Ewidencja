@@ -1,10 +1,71 @@
-﻿form, fieldset {
+﻿@import "./variables.less";
+@import "./mixins.less";
+
+form, fieldset {
     margin:0;
     padding:0;
     border:0;
 }
 
 legend {
+    border: 0;
     font-size:12px;
+    margin-bottom:0;
+}
 
+button.btn
+{
+    background-color: @color-accent;
+    .border-radius-mixin(0);   
+      
+    color:@color-text-on-accent;
+    height:@margin-unit * 2.5;
+    font-family: 'Roboto Bold';
+    
+    font-size: 12px;
+
+    padding: 0;
+    margin: 0;
+    line-height:12px;  
+
+    
+
+    border:0;
+    border-bottom:3px solid @color-accent-dark;
+    border-top:3px solid @color-accent;
+}
+
+button.btn:hover
+{
+    transition-duration:0.3s;
+    background-color: @color-accent-dark;    
+}
+
+button.btn8
+{
+    width:@margin-unit*8;
+}
+
+button.btn12
+{
+    width:@margin-unit*12;
+}
+
+input
+{
+    height:@margin-unit * 2.5;
+   
+    border: 1px solid @color-panel-header;
+    padding:0;
+    padding-left:@margin-unit /2;
+    display:block;float:left;     
+    .border-radius-mixin(0);    
+}
+
+input:active, input:focus
+{
+    outline:none;
+    border-color:@color-accent;
+    border-bottom: 3px solid @color-accent;
+    
 }

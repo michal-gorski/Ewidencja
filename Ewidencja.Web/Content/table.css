@@ -1,0 +1,13 @@
+﻿/* colors */
+/* pixel sizes */
+div.info-panel .table-container {
+  height: calc(100% - 36px - 12px * 2);
+  overflow: auto;
+}
+div.info-panel table {
+  width: calc(100% - 12px);
+  margin-top: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  overflow: auto;
+}

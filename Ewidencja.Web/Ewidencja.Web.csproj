@@ -208,6 +208,12 @@
     <Content Include="Content\fonts\glyphiconshalflings-regular.otf" />
     <Content Include="Content\fonts\glyphiconshalflings-regular.eot" />
     <None Include="Content\forms.less" />
+    <Content Include="Content\forms.css">
+      <DependentUpon>forms.less</DependentUpon>
+    </Content>
+    <Content Include="Content\forms.min.css">
+      <DependentUpon>forms.less</DependentUpon>
+    </Content>
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\mixins.css">
@@ -224,8 +230,21 @@
     <Content Include="Content\panel.min.css">
       <DependentUpon>panel.less</DependentUpon>
     </Content>
+    <None Include="Content\patients-list.less" />
+    <Content Include="Content\patients-list.css">
+      <DependentUpon>patients-list.less</DependentUpon>
+    </Content>
+    <Content Include="Content\patients-list.min.css">
+      <DependentUpon>patients-list.less</DependentUpon>
+    </Content>
     <Content Include="Content\simpliq-responsive.css" />
     <Content Include="Content\simpliq.css" />
+    <Content Include="Content\table.css">
+      <DependentUpon>table.less</DependentUpon>
+    </Content>
+    <Content Include="Content\table.min.css">
+      <DependentUpon>table.less</DependentUpon>
+    </Content>
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -319,6 +338,7 @@
     <Content Include="Scripts\lib\angular.min.js" />
     <Content Include="Scripts\lib\bootstrap.js" />
     <Content Include="Scripts\lib\bootstrap.min.js" />
+    <Content Include="Content\table.less" />
     <None Include="Scripts\lib\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\lib\jquery-2.0.3.js" />
     <Content Include="Scripts\lib\jquery-2.0.3.min.js" />

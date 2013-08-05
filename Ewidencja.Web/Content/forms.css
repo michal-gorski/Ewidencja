@@ -1,0 +1,60 @@
+﻿/* colors */
+/* pixel sizes */
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+legend {
+  border: 0;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+button.btn {
+  background-color: #36a9e1;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: #ffffff;
+  height: 30px;
+  font-family: 'Roboto Bold';
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  line-height: 12px;
+  border: 0;
+  border-bottom: 3px solid #145f84;
+  border-top: 3px solid #36a9e1;
+}
+button.btn:hover {
+  transition-duration: 0.3s;
+  background-color: #145f84;
+}
+button.btn8 {
+  width: 96px;
+}
+button.btn12 {
+  width: 144px;
+}
+input {
+  height: 30px;
+  border: 1px solid #cccccc;
+  padding: 0;
+  padding-left: 6px;
+  display: block;
+  float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+input:active,
+input:focus {
+  outline: none;
+  border-color: #36a9e1;
+  border-bottom: 3px solid #36a9e1;
+}

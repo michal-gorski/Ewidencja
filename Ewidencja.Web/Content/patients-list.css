@@ -1,0 +1,5 @@
+﻿/* colors */
+/* pixel sizes */
+#patientsSearch {
+  width: calc(100% - 12px * 8);
+}

@@ -1,14 +1,18 @@
 ﻿<div id="patientsList" class="info-panel info-panel-6" ng-controller="PatientsListController">
-        <div class="info-panel-header font-bold-condensed"><h1>Pacjenci</h1></div>
-        <div class="info-panel-content">
-            
-            <form id="patientsSearchForm">
-                <fieldset>
-                    <legend>Wyszukaj pacjentów</legend>
-                    <input type="text" name="patientSearch" id="patientsSearch" ng-model="searchText" />
-                </fieldset>
-            </form>
-            
+    <div class="info-panel-header font-bold-condensed">
+        <h1 id="patientsListHeader">Pacjenci</h1>
+        
+    </div>
+    <div class="info-panel-content">
+        <form id="patientsSearchForm" class="searchForm">
+            <fieldset>
+                
+                <input type="text" name="patientSearch" id="patientsSearch" ng-model="searchText" />
+                <button class="btn btn8">SZUKAJ</button>
+            </fieldset>
+        </form>
+        
+        <div class="table-container">
             <table>
                 <thead>
                     <tr>
@@ -28,7 +32,8 @@
                 </tbody>
 
             </table>
-                
         </div>
 
     </div>
+
+</div>

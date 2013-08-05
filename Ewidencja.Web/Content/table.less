@@ -1,0 +1,18 @@
+﻿@import "./variables.less";
+@import "./mixins.less";
+div.info-panel .table-container
+{
+   
+    height: ~"calc(100% - @{panel-header-height} - @{margin-unit} * 2)"; 
+    overflow:auto;
+}
+
+div.info-panel table
+{
+    width: ~"calc(100% - @{margin-unit})";
+    margin-top: @margin-unit; 
+   
+    margin-left:@margin-unit / 2 ;
+    margin-right:@margin-unit / 2;   
+    overflow: auto;
+}

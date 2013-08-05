@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using System.Web.UI.WebControls;
+﻿using System.Linq;
 using Ewidencja.DTOs;
+using Ewidencja.DTOs.DataClasses;
 using Ewidencja.Model;
 using Ewidencja.Model.Interfaces;
+using System.Collections.Generic;
+using System.Web.Http;
 
 namespace Ewidencja.Controllers.WebAPI
 {
-    [Authorize]
+    [System.Web.Http.Authorize]
     public class PatientsController : ApiController
     {
         private IPatientService _patientService = ServiceProvider.GetPatientService(); 
 
         // GET api/<controller>
-        [Authorize(Roles="Doctor, Assistant")]
-        public IEnumerable<Patient> GetPatientsList(int skip, int take)
+        [System.Web.Http.Authorize(Roles = "Doctor, Assistant")]
+        public IEnumerable<PatientPartial> GetPatientsList(int skip = 0, int take = 50)
         {
             return _patientService.GetPartialPatientsBasicInfo(skip, take);
         }

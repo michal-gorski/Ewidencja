@@ -11,7 +11,7 @@ namespace Ewidencja.Models
     public class UsersContext : DbContext
     {
         public UsersContext()
-            : base("DefaultConnection")
+            : base("Ewidencja.AspNet.UsersContext")
         {
         }
 

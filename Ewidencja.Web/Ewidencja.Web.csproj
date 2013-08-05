@@ -171,13 +171,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\WebAPI\PatientsController.cs" />
-    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201307301408434_Users Test.cs" />
-    <Compile Include="Migrations\201307301408434_Users Test.Designer.cs">
-      <DependentUpon>201307301408434_Users Test.cs</DependentUpon>
+    <Compile Include="Migrations\201308051211032_InitialAdd.cs" />
+    <Compile Include="Migrations\201308051211032_InitialAdd.Designer.cs">
+      <DependentUpon>201308051211032_InitialAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -301,6 +300,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\ewidencjaServices.js" />
+    <Content Include="Scripts\gridUtils.js" />
     <Content Include="Scripts\lib\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\lib\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\lib\angular-bootstrap.js" />
@@ -373,6 +373,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ewidencja.DTOs\Ewidencja.DTOs.csproj">
@@ -397,8 +398,8 @@
     <Content Include="Content\font\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201307301408434_Users Test.resx">
-      <DependentUpon>201307301408434_Users Test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201308051211032_InitialAdd.resx">
+      <DependentUpon>201308051211032_InitialAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

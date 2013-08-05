@@ -6,6 +6,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Ewidencja.Model;
+using Ewidencja.Models;
+using WebMatrix.Data;
 
 namespace Ewidencja
 {
@@ -16,6 +19,7 @@ namespace Ewidencja
     {
         protected void Application_Start()
         {
+            
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

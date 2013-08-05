@@ -1,32 +1,29 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
-
-namespace Ewidencja.DTOs
+namespace Ewidencja.DTOs.DataClasses
 {
-    public class Patient
+    public class PatientPartial
     {
-        
+        private string _cellPhone;
+
         public int PatientId
         {
             get;
             set;
         }
 
-        [Required(ErrorMessage = "Podaj imię pacjenta")]
         public string Name
         {
             get;
             set;
         }
-       
-        [Required(ErrorMessage = "Podaj nazwisko pacjenta")]
+
         public string Surname
         {
             get;
             set;
         }
-      
+
         public DateTime? DateOfBirth
         {
             get;
@@ -52,30 +49,6 @@ namespace Ewidencja.DTOs
             set;
         }
 
-        public string PostalCode
-        {
-            get;
-            set;
-        }
-
-        public string Voivodship
-        {
-            get;
-            set;
-        }
-
-        public string District
-        {
-            get;
-            set;
-        }
-
-        public string Commune
-        {
-            get;
-            set;
-        }
-
         public string Phone
         {
             get;
@@ -84,15 +57,15 @@ namespace Ewidencja.DTOs
 
         public string CellPhone
         {
-            get;
-            set;
+            get
+            {
+                return _cellPhone;
+            }
+            set
+            {
+                _cellPhone = value.Trim().Replace('-', ' ');
+            }
         }
-                
-        public string Email
-        {
-            get;
-            set;
-        }
-
     }
 }
+

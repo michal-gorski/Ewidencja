@@ -37,6 +37,11 @@ namespace Ewidencja.LegacyDataImporter
             return new string(array);
         }
 
+        private static string NormalisePhone(string input)
+        {
+            return input.Trim().Replace('-', ' ');
+        }
+
         public static List<Patient> ImportPatients(FbConnection conn)
         {
 
@@ -69,8 +74,8 @@ namespace Ewidencja.LegacyDataImporter
                 patient.Voivodship = NormaliseName(reader["WOJEWODZTWO"].ToString());
                 patient.District = NormaliseName(reader["POWIAT"].ToString());
                 patient.Commune = NormaliseName(reader["GMINA"].ToString());
-                patient.Phone = reader["TELEFON"].ToString();
-                patient.CellPhone = reader["TELEFONKOMORKOWY"].ToString();
+                patient.Phone = NormalisePhone(reader["TELEFON"].ToString());
+                patient.CellPhone = NormalisePhone(reader["TELEFONKOMORKOWY"].ToString());
                 patient.Email = reader["EMAIL"].ToString();
 
                 patients.Add(patient);

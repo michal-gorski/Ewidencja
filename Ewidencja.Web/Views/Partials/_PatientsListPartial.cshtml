@@ -19,14 +19,14 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="patient in patients">
-                        <td>{{patient.name}}</td>
-                        <td>{{patient.surname}}</td>
-                        <td>{{patient.address}}</td>
+                        <td>{{patient.PatientID}}</td>
+                        <td>{{patient.Name}}</td>
+                        <td>{{patient.Surname}}</td>
+                        <td>{{patient.DateOfBirth}}</td>
                     </tr>
                 </tbody>
 
             </table>
-            <button ng-click="AddPatient()" value="dodaj pacjenta">dodaj pacjenta</button>
                 
         </div>
 

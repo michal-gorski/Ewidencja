@@ -1,18 +1,119 @@
 ﻿@import "./variables.less";
 @import "./mixins.less";
+
+@header-height:@margin-unit * 4;
+@row-height:@margin-unit * 3;
+
+
+
 div.info-panel .table-container
 {
-   
-    height: ~"calc(100% - @{panel-header-height} - @{margin-unit} * 2)"; 
-    overflow:auto;
+    margin-top: @margin-unit; 
+    height:300px;     
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    position: relative; /* could be absolute or relative */
+    padding-top:@header-height; /* height of header */
 }
 
-div.info-panel table
+
+    .table-container-inner {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    div.info-panel table
 {
-    width: ~"calc(100% - @{margin-unit})";
-    margin-top: @margin-unit; 
-   
-    margin-left:@margin-unit / 2 ;
-    margin-right:@margin-unit / 2;   
-    overflow: auto;
+    width: 100%;
+    overflow:auto;     
+
+    background-color: @color-table-background;
+     
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+    
+    div.header-background {
+      background-color: @color-accent;
+      height: @header-height; 
+      width:100%;
+      position: absolute;
+      top: 0;
+ 
+      left: 0;
+    }
+    
+   
+    .th-inner {
+      position: absolute;
+      top: 0;
+      line-height: @header-height; /* height of header */
+      text-align: left;
+     
+      padding-left: @margin-unit;
+      margin-left: -@margin-unit;
+      width:200px;
+      
+    }
+    th {
+        background-color:@color-accent;
+        color:@color-text-on-accent;
+        height:0;
+        width:200px;
+        border:none;
+        line-height:0;
+        padding:0;
+        margin:0;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+div.info-panel table th, div.info-panel table td
+{
+    padding:@margin-unit/2;
+    vertical-align:middle;
+    border: 1px solid @color-table-background-alternate;
+}
+
+
+div.info-panel table thead{    
+    
+    background-color:@color-accent;
+    color:@color-text-on-accent;
+}
+
+div.info-panel table thead th{
+    height:@margin-unit * 4;    
+}
+
+
+div.info-panel table tbody tr td
+{
+   background-color:@color-table-background;
+    height:@margin-unit * 3;   
+}
+
+
+div.info-panel table tbody tr.alternate td
+{
+   background-color:@color-table-background-alternate;
+}
+
+
+*/

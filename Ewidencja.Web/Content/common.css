@@ -1,13 +1,54 @@
 ﻿/* colors */
 /* pixel sizes */
+/* fonts */
+.font-light {
+  font-family: 'Roboto Light';
+}
+.font-regular {
+  font-family: 'Roboto Regular';
+}
+.font-bold {
+  font-family: 'Roboto Bold';
+}
+.font-regular-condensed {
+  font-family: 'Roboto Condensed';
+}
+.font-bold-condensed {
+  font-family: 'Roboto Bold Condensed';
+}
 body,
 html {
   height: 100%;
   overflow: hidden;
-  font-family: 'Roboto Light' !important;
+  font-family: 'Roboto Light';
   color: #323231;
   margin: 0;
   padding: 0;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-color: #f0f0f0;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: #145f84;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #cccccc;
 }
 div#container {
   /*width: 1240px;*/
@@ -18,7 +59,7 @@ div#container {
   padding: 0;
 }
 div#header {
-  height: 55px;
+  height: 60px;
   color: #36a9e1;
   background-color: #383e4b;
   padding: 0;
@@ -48,5 +89,5 @@ img#logo {
   margin-left: 12px;
   margin-right: 12px;
   margin-top: 12px;
-  height: calc(100% - 55px - 2 * 12px);
+  height: calc(100% - 60px - 2 * 12px);
 }

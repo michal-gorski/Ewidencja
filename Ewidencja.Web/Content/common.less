@@ -1,13 +1,38 @@
 ﻿@import "./variables.less";
-@header-height: 55px;
+@import "./mixins.less";
+@import "./classes.less";
+
+@header-height: @margin-unit * 5;
 
 body, html {
     height: 100%;
     overflow: hidden;
-    font-family: 'Roboto Light' !important;
+    .font-light;
     color: #323231;
     margin: 0;
     padding: 0;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: @margin-unit;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+   
+    .border-radius-mixin(0); 
+    background-color:@color-background;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+     .border-radius-mixin(0); 
+    background: @color-accent-dark;
+    
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: @color-panel-header;
 }
 
 div#container {

@@ -1,37 +1,40 @@
 ﻿<div id="patientsList" class="info-panel info-panel-6" ng-controller="PatientsListController">
     <div class="info-panel-header font-bold-condensed">
         <h1 id="patientsListHeader">Pacjenci</h1>
-        
+
     </div>
     <div class="info-panel-content">
         <form id="patientsSearchForm" class="searchForm">
             <fieldset>
-                
+
                 <input type="text" name="patientSearch" id="patientsSearch" ng-model="searchText" />
                 <button class="btn btn8">SZUKAJ</button>
             </fieldset>
         </form>
-        
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Imię</th>
-                        <th>Nazwisko</th>
-                        <th>Adres</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="patient in patients">
-                        <td>{{patient.PatientId}}</td>
-                        <td>{{patient.Name}}</td>
-                        <td>{{patient.Surname}}</td>
-                        <td>{{patient.DateOfBirth}}</td>
-                    </tr>
-                </tbody>
 
-            </table>
+        <div class="table-container">
+            <div class="header-background"> </div>
+            <div class="table-container-inner">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><div class="th-inner">ID</div></th>
+                            <th><div class="th-inner">Imię</div></th>
+                            <th><div class="th-inner">Nazwisko</div></th>
+                            <th><div class="th-inner">Data urodzenia</div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="patient in patients" ng-class-even="'alternate'">
+                            <td>{{patient.PatientId}}</td>
+                            <td>{{patient.Name}}</td>
+                            <td>{{patient.Surname}}</td>
+                            <td>{{patient.DateOfBirth}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
         </div>
 
     </div>

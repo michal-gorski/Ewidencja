@@ -1,13 +1,89 @@
 ﻿/* colors */
 /* pixel sizes */
 div.info-panel .table-container {
-  height: calc(100% - 36px - 12px * 2);
-  overflow: auto;
+  margin-top: 12px;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  /* could be absolute or relative */
+
+  padding-top: 48px;
+  /* height of header */
+
+}
+.table-container-inner {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
 }
 div.info-panel table {
-  width: calc(100% - 12px);
-  margin-top: 12px;
-  margin-left: 6px;
-  margin-right: 6px;
+  width: 100%;
   overflow: auto;
+  background-color: #fefefe;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
+div.header-background {
+  background-color: #36a9e1;
+  height: 48px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.th-inner {
+  position: absolute;
+  top: 0;
+  line-height: 48px;
+  /* height of header */
+
+  text-align: left;
+  padding-left: 12px;
+  margin-left: -12px;
+  width: 200px;
+}
+th {
+  background-color: #36a9e1;
+  color: #ffffff;
+  height: 0;
+  width: 200px;
+  border: none;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+/*
+div.info-panel table th, div.info-panel table td
+{
+    padding:@margin-unit/2;
+    vertical-align:middle;
+    border: 1px solid @color-table-background-alternate;
+}
+
+
+div.info-panel table thead{    
+    
+    background-color:@color-accent;
+    color:@color-text-on-accent;
+}
+
+div.info-panel table thead th{
+    height:@margin-unit * 4;    
+}
+
+
+div.info-panel table tbody tr td
+{
+   background-color:@color-table-background;
+    height:@margin-unit * 3;   
+}
+
+
+div.info-panel table tbody tr.alternate td
+{
+   background-color:@color-table-background-alternate;
+}
+
+
+*/

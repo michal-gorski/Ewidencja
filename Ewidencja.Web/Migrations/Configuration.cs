@@ -3,8 +3,7 @@ using WebMatrix.WebData;
 
 namespace Ewidencja.Migrations
 {
-    using System;
-    using System.Data.Entity;
+
     using System.Data.Entity.Migrations;
     using System.Linq;
 
@@ -12,7 +11,7 @@ namespace Ewidencja.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Ewidencja.Models.UsersContext context)
@@ -53,8 +52,6 @@ namespace Ewidencja.Migrations
 
             if (!Roles.GetRolesForUser("assistant").Contains("Assistant"))
                 Roles.AddUsersToRoles(new[] { "assistant" }, new[] { "Assistant" });
-
-
         }
     }
 }

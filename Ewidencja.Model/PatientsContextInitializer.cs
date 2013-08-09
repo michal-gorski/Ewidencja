@@ -12,7 +12,7 @@ namespace Ewidencja.Model
         protected override void Seed(PatientsContext context)
         {
             base.Seed(context);
-            
+
             var patients = new List<Patient>
                 {
                     new Patient
@@ -48,21 +48,29 @@ namespace Ewidencja.Model
             }
 
             context.SaveChanges();
-
-            var importer = new LegacyDataImporter.LegacyDataImporter(context.LegacyDBPath);
-            var importedPatients = importer.ImportPatients();
-            foreach (var importedPatient in importedPatients)
+            try
             {
-                try
-                {
-                    context.Patients.Add(importedPatient);
-                }
-                catch (Exception ex)
-                {
-                }
-            }
 
-            context.SaveChanges();
+
+                var importer = new LegacyDataImporter.LegacyDataImporter(context.LegacyDBPath);
+                var importedPatients = importer.ImportPatients();
+                foreach (var importedPatient in importedPatients)
+                {
+                    try
+                    {
+                        context.Patients.Add(importedPatient);
+                    }
+                    catch (Exception ex)
+                    {
+                    }
+                }
+
+                context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

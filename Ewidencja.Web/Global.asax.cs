@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -8,7 +9,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Ewidencja.Model;
 using Ewidencja.Models;
-using WebMatrix.Data;
+using Ewidencja;
+
 
 namespace Ewidencja
 {
@@ -19,7 +21,12 @@ namespace Ewidencja
     {
         protected void Application_Start()
         {
-            
+
+            Database.SetInitializer(new UsersContextInitializer());
+
+            var context = new UsersContext();
+            context.Database.Initialize(false);
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

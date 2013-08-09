@@ -1,21 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Web.Security;
+using Ewidencja.DTOs;
+using System.Linq;
+using Ewidencja.Models;
 using WebMatrix.WebData;
 
-namespace Ewidencja.Migrations
+
+namespace Ewidencja
 {
-
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    internal sealed class Configuration : DbMigrationsConfiguration<Ewidencja.Models.UsersContext>
+    internal class UsersContextInitializer : DropCreateDatabaseIfModelChanges<UsersContext>
     {
-        public Configuration()
+        protected override void Seed(UsersContext context)
         {
-            AutomaticMigrationsEnabled = true;
-        }
+            base.Seed(context);
 
-        protected override void Seed(Ewidencja.Models.UsersContext context)
-        {
             WebSecurity.InitializeDatabaseConnection(
                "Ewidencja.AspNet.UsersContext",
                "UserProfile",

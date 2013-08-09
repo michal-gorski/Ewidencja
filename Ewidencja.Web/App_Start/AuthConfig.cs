@@ -6,7 +6,14 @@ namespace Ewidencja
     {
         public static void RegisterAuth()
         {
-           
+            if (!WebSecurity.Initialized)
+            {
+                WebSecurity.InitializeDatabaseConnection(
+                    "Ewidencja.AspNet.UsersContext",
+                    "UserProfile",
+                    "UserId",
+                    "UserName", autoCreateTables: true);
+            }
         }
     }
 }

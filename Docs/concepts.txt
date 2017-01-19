@@ -1,0 +1,64 @@
+Aspekty: z punktu widzenia lekarza co najczesciej potrzebne i z punktu widzenia rejestratora itp.
+
+Okna jako tile: metro UI - kostki zamiast zakladek?
+
+Menu po lewej jako tiles, duzy napis start u gory. List pacjentow. Gdy wybrany pacjent, lista zweza sie (chowanie kolumn), po prawej pojawia sie pas z informacjami podstawowymi (dane adresowe, najblizsza wizyta) i guzikami do edycji
+
+Nie otwierac okien, tylko suwac ekrany
+
+Czyli np. mamy pas informacji o pacjencie, klikamy na kafelek z wizytami, wysiwetla sie lista wizyt, klikamy na kafelek do edycji wizyty-wszystko odjezdza w lewo, zostaje tylko lista wizyt, a z prawej wjezdza formatka edycji wizyty z guzikiem ok. PO nacisnieciu ok, wszystko wjezdza z powrotem
+
+Rozne kolory: strefa o pacjencie, o lekarzu, admin
+Na dzien dobry dashboard dla danego usera
+Najwazniejsze elementy wyroznione kolorem
+
+Na dzien dobry lista pacjentow: imie nazwisko adres najblizsza wizyta wiek/data urodzenia/pesel?
+oraz lista lekarzy i harmonogram kazdego w widoku list/detail z metro ui
+
+animacje: pojawianie sie: fade in+lekkie przesuniecie z prawa w lewo
+
+Snapped view windows 8
+
+Slownikow nie robic, tylko zapamietywac wszystkie, ew. jesli Levenstein znajdzie podobny to pytac
+
+Na podgladzie pacjenta (ustalic workflows dla rejestratorki/lekarza). Mozliwy wybor widgetow na podglad pacjenta?
+Czy edycja?
+Notatka? Proste teleadresowe, Najblizsza wizyta, podglad zebiszczów? diagnozy ostatnie?
+
+
+Po mouseover w puste pole w terminarzu pojawia sie napis dodaj wizyte
+
+Wspolny sposob wizualizacji bledow w danych (np. brak nazwiska). ViewModel implementuje interfejs IHandlesErrors zawierajacy liste bledow.
+View korzysta z klasy, ktora na podstawie listy bledow wyswietla powiadomienia. Lista bledow generowana z EF.
+
+
+
+Okno pacjenta - tekstowe menu (settings z Windows8?), guzik wstecz z metro. Jak save/cancel? MEtro UI ma guziki z prawej u gory
+
+JS single page: zmiana adresu w przegladarce (client side routing)
+
+Grafik wizyt: lista najblizszych, dzienny, tygodniowy, miesieczny. Miesieczny zaznacza dni, gdzie cos jest. Tygodniowy jeszcze nie wiem jak - lista z grupowaniem wg dni?
+
+Grafik wizyt: nad grafikiem lekarz aktywny, po kliknieciu slide in lista, wyszarzona reszta
+
+Klik w liste pacjentow/wizyte - quick info z prawej. DblClick - edycja
+
+Dashboard dla pacjenta w przyszlosci
+
+Dwie czesci dashboardu: lista pacjentów i wizyt
+PO kliknieciu w pacjenta lista wizyt wyjezdza i wjezdza detal
+detal z pacjentem powiazany tak, ze pacjent na liscie ma tlo, ktore wyjezdza poza liste i dociera do lewego brzegu okna detali
+POdobna sytuacja po kliknieciu w pojedyncza wizyte
+
+OKno pacjenta: dane ogolne - alergie, przyjmowane leki, rozpoznania (wyleczone vs trwajace)
+Oprocz tego - wizyty poszczegolne - w nich recepty, badanie fizykalne, rozpoznanie (jakos polaczone z tym ogolnym)
+
+"Form Labels Work Best Above The Field"
+Icon vs label - label always wins in readibility
+The Ideal Search Box Is 27-Characters Wide
+
+Load more jako ux design dlugiej listy pacjentów
+
+Dodatkowa potrzebna funkcjonalnosc:
+	druk recept
+	w opisie choroby wybor predefiniowanych zwrotów dla szybszego pisania
